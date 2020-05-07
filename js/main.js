@@ -75,11 +75,56 @@ function rgb2hex(rgb) {
 $(function() {
   var bookmark = {
     data: [{
-      name: '开发日志',
-      link: 'http://kksan.top/posts/12023/',
-      box_shadow: '#F18033',
-      icon: 'img/log.png',
+      name: 'Jira',
+      link: 'http://192.168.1.226:8780',
+      box_shadow: '#FFFFFF',
+      icon: 'img/custom/jira.png',
     }, {
+      name: 'Confluence',
+      link: 'http://192.168.1.226:8090',
+      box_shadow: '#FFFFFF',
+      icon: 'img/custom/confluence.jpeg',
+    },{
+      name: 'GitLab',
+      link: 'http://192.168.1.226',
+      box_shadow: '#FFFFFF',
+      icon: 'img/custom/gitlab.jpeg',
+    }, {
+      name: '测试环境',
+      link: 'https://dev-admin.ylyk.com/',
+      box_shadow: '#FFFFFF',
+      icon: 'img/custom/admin.png',
+    }, {
+      name: 'Jenkins',
+      link: 'http://192.168.1.226:8080/',
+      box_shadow: '#FFFFFF',
+      icon: 'img/custom/jekins.jpeg',
+    }, {
+      name: '新后台',
+      link: 'http://192.168.1.55/',
+      box_shadow: '#FFFFFF',
+      icon: 'img/custom/admin.gif',
+    }, {
+      name: '正式环境',
+      link: 'https://admin.ylyk.com/index.php',
+      box_shadow: '#FFFFFF',
+      icon: 'img/custom/admin.png',
+    }, {
+      name: '神策数据',
+      link: 'https://sensors.devops.zhuomogroup.com/',
+      box_shadow: '#FFFFFF',
+      icon: 'img/custom/sensors.jpg',
+    }, 
+    
+    
+    
+    
+    
+    
+    
+    
+    /** 
+    {
       name: '酷安',
       link: 'https://www.coolapk.com',
       box_shadow: '#11B063',
@@ -154,7 +199,9 @@ $(function() {
       link: 'https://vp.fact.qq.com/home',
       box_shadow: '#00A0E9',
       icon: 'img/true.png',
-    }]
+    }
+    */
+  ]
   }
   for (var i = 0; i < bookmark.data.length; i++) {
     if (bookmark.data[i].name == 'Via插件') {
@@ -176,140 +223,91 @@ $(function() {
       searchlink: 'https://www.baidu.com/s',
       searchname: 'wd',
       color: '#3245df',
-      placeholder: '百度一下...'
+      //placeholder: '百度一下'
     }, {
       name: 'google',
       icon: 'img/google-xs.png',
       searchlink: 'https://www.google.com/search',
       searchname: 'q',
       color: '#4285f4',
-      placeholder: '咕噜咕噜...'
+      //placeholder: '咕噜咕噜...'
     }, {
       name: 'bing',
       icon: 'img/bing-xs.png',
       searchlink: 'https://cn.bing.com/search',
       searchname: 'q',
       color: '#00868B',
-      placeholder: 'Bing搜索...'
+      //placeholder: 'Bing搜索...'
     }, {
       name: 'yahoo',
       icon: 'img/yahoo-xs.png',
       searchlink: 'https://search.yahoo.com/search',
       searchname: 'p',
       color: '#5f01d1',
-      placeholder: 'Yahoo~'
+     // placeholder: 'Yahoo~'
     }, {
       name: 'magi',
       icon: 'img/magi-xs.png',
       searchlink: 'https://magi.com/search',
       searchname: 'q',
       color: 'black',
-      placeholder: 'Mag[i]...'
+      //placeholder: 'Mag[i]...'
     }, {
       name: 'miji',
       icon: 'img/miji-xs.png',
       searchlink: 'https://mijisou.com/',
       searchname: 'q',
       color: '#575757',
-      placeholder: '不追踪你的搜索引擎...'
+      //placeholder: '不追踪你的搜索引擎...'
     }, {
       name: 'sougou',
       icon: 'img/sougou-xs.png',
       searchlink: 'https://www.sogou.com/web',
       searchname: 'query',
       color: '#f94c18',
-      placeholder: '搜狗搜索...'
+      //placeholder: '搜狗搜索...'
     }, {
       name: 'duckduckgo',
       icon: 'img/duckduckgo-xs.png',
       searchlink: 'https://duckduckgo.com',
       searchname: 'q',
       color: '#de5833',
-      placeholder: '嘎嘎嘎...'
+      // placeholder: '嘎嘎嘎...'
     }, {
       name: 'doge',
       icon: 'img/doge-xs.png',
       searchlink: 'https://www.dogedoge.com/results',
       searchname: 'q',
       color: '#ffca74',
-      placeholder: '手动狗头.jpg'
+      //placeholder: '手动狗头.jpg'
     }, {
       name: 'wechat',
       icon: 'img/wechat-xs.png',
       searchlink: 'https://weixin.sogou.com/weixin',
       searchname: 'query',
       color: '#2ca43a',
-      placeholder: '搜微信文章...'
+      //placeholder: '搜微信文章...'
     }, {
       name: 'seeres',
       icon: 'img/seeres-xs.png',
       searchlink: 'https://seeres.com/search',
       searchname: 'q',
       color: '#414baa',
-      placeholder: 'private search...'
+      // placeholder: 'private search...'
     }, {
       name: 'quark',
       icon: 'img/quark-xs.png',
       searchlink: 'https://quark.sm.cn/s',
       searchname: 'q',
       color: '#6182f6',
-      placeholder: '夸克搜索...'
-    }, {
-      name: 'taobao',
-      icon: 'img/taobao-xs.png',
-      searchlink: 'https://s.taobao.com/search',
-      searchname: 'q',
-      color: '#FF5B00',
-      placeholder: '淘，我喜欢...'
-    }, {
-      name: 'jingdong',
-      icon: 'img/jingdong-xs.png',
-      searchlink: 'https://search.jd.com/Search',
-      searchname: 'keyword',
-      color: '#F30213',
-      placeholder: '多，快，好，省...'
-    }, {
-      name: 'bilibili',
-      icon: 'img/bilibili-xs.png',
-      searchlink: 'https://search.bilibili.com/all',
-      searchname: 'keyword',
-      color: '#e47494',
-      placeholder: 'b站是一个学习网站...'
-    }, {
-      name: 'github',
-      icon: 'img/github-xs.png',
-      searchlink: 'https://github.com/search',
-      searchname: 'q',
-      color: '#24292e',
-      placeholder: '全球最大的开源社区...'
-    }, {
-      name: 'toutiao',
-      icon: 'img/toutiao-xs.png',
-      searchlink: 'https://m.toutiao.com/search',
-      searchname: 'keyword',
-      color: '#ed2f28',
-      placeholder: '搜今日头条...'
-    }, {
-      name: 'weibo',
-      icon: 'img/weibo-xs.png',
-      searchlink: 'https://s.weibo.com/weibo',
-      searchname: 'q',
-      color: '#e6162d',
-      placeholder: '搜微博...'
-    }, {
-      name: 'zhihu',
-      icon: 'img/zhihu-xs.png',
-      searchlink: 'https://www.zhihu.com/search',
-      searchname: 'q',
-      color: '#1087eb',
-      placeholder: '我们都是有问题的人...'
+      // placeholder: '夸克搜索...'
     }, {
       name: 'kuaidi',
       icon: 'img/kuaidi-xs.png',
       searchlink: 'https://m.kuaidi100.com/result.jsp',
       searchname: 'nu',
       color: '#317EE7',
-      placeholder: '搜快递...'
+      //placeholder: '搜快递...'
     }]
   }
   for (var i = 0; i < search.data.length; i++) { //添加搜索按钮
@@ -410,16 +408,16 @@ function check() {
 var d = new Date();
 var time = d.getHours();
 if (time < 24) {
-  document.getElementById("title").innerHTML = "一个导航 | Good evening";
+  document.getElementById("title").innerHTML = "友邻OA，晚上好";
 }
 if (time < 18) {
-  document.getElementById("title").innerHTML = "一个导航 | Good afternoon";
+  document.getElementById("title").innerHTML = "友邻OA，下午好";
 }
 if (time < 12) {
-  document.getElementById("title").innerHTML = "一个导航 | Good morning";
+  document.getElementById("title").innerHTML = "友邻OA，早上好";
 }
 if (time < 5) {
-  document.getElementById("title").innerHTML = "一个导航 | Stay up late again";
+  document.getElementById("title").innerHTML = "友邻OA，夜深了";
 }
 //title问候语结束
 
